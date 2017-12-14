@@ -1,0 +1,19 @@
+﻿<Window x:Class="CanvasTrials.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CanvasTrials"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="43"/>
+        </Grid.RowDefinitions>
+        <StackPanel Name="ProgressStack" Orientation="Horizontal" Height="20"/>
+        <Button Content="Initial Setup" HorizontalAlignment="Left" Margin="357,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="431,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Click="Button_Click_1"/>
+    </Grid>
+</Window>
