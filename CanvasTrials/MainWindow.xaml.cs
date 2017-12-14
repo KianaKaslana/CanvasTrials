@@ -15,7 +15,6 @@ namespace CanvasTrials
     {
         public MainWindow()
         {
-            FillItems = new ObservableCollection<Rectangle>();
             InitializeComponent();
             DataContext = this;
             SetupColorDictionary();
@@ -50,10 +49,14 @@ namespace CanvasTrials
             }
 
             entries.ForEach(x => x.AddRectangleToPanel(ProgressStack));
+            CreateTooltip(eps, missingEps);
         }
 
-        private ObservableCollection<Rectangle> FillItems { get; }
-
+        private void CreateTooltip(int eps, int[] missingEps)
+        {
+            ProgressStack.ToolTip = $"Total Episodes:\t{eps}\r\nMissing Episodes:\t{string.Join(",", missingEps)}";
+        }
+        
         private Dictionary<string, Color> _colorDictionary;
 
         private void Button_Click(object sender, RoutedEventArgs e)
