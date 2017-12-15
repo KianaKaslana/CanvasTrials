@@ -12,7 +12,7 @@
             <RowDefinition/>
             <RowDefinition Height="43"/>
         </Grid.RowDefinitions>
-        <StackPanel Name="ProgressStack" Orientation="Horizontal" Height="20"/>
+        <StackPanel Name="ProgressStack" Orientation="Horizontal" Height="20" SnapsToDevicePixels="True"></StackPanel>
         <Button Content="Initial Setup" HorizontalAlignment="Left" Margin="352,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
         <Button Content="Update" HorizontalAlignment="Left" Margin="431,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Click="Button_Click_1"/>
     </Grid>
